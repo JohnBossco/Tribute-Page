@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 body
  {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -7,6 +9,8 @@ body
     text-align: center;
     background-color: red;
     display: -webkit-inline-box;
+    max-width: 100vw;
+    
     
 }
 @media screen and (min-width: 1900px){
@@ -31,11 +35,7 @@ body
     height: auto;
     background-color: white;
     padding: 0px;
-    border-radius: 0%;
-
-
-    
-    
+    border-radius: 0%; 
 }
 h1{
     color: black;
@@ -64,14 +64,51 @@ figcaption{
 }
 
 
-img{
+#image{
    position: relative;
    max-width: 100%;
    height: auto;
 }
+
+.timeline{
+    display: flex;
+}
+
+.imageGroup{
+    display: flex;
+    min-width: 45vw;
+    flex-direction: column;
+}
+
+.row1{
+    flex-wrap: nowrap;
+    padding-bottom: 5%;
+}
+
+/* .row1 img{
+   position: relative;
+   max-width: 100%;
+   height: auto;
+} */
+
+.jordanImg{
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
 
 #img-caption{
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
     font-style: oblique;
 }
+
+.info{
+    min-width: 50vw;
+}
+
